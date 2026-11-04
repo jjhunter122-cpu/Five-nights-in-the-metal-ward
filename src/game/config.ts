@@ -39,4 +39,20 @@ export const PLAYER = {
 /** Seconds for the camera to converge on its target (exponential smoothing). */
 export const CAMERA = {
   smoothing: 0.14,
+  zoom: 2,
+} as const;
+
+/** Frame geometry for the pixel-art sources in `public/assets`. */
+export const SPRITE = {
+  /** Tile size of `sheet.png`, a 17 x 8 grid. */
+  tile: 16,
+  /** Frame size of `characters.png`, a 23 x 4 grid. */
+  character: 32,
+  columns: 23,
+  rows: 4,
+  /** The green-hooded hero is the third row (0-based). */
+  playerRow: 2,
+  idleCol: 0,
+  runFrom: 8,
+  runTo: 13,
 } as const;

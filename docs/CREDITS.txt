@@ -1,0 +1,984 @@
+###############################################
+OpenGameArt.org automatically generated credits file notice:
+
+THIS FILE IS FOR INFORMATIONAL PURPOSES ONLY.  NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL OPENGAMEART.ORG BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE USE OF THIS FILE OR THE INFORMATION IN IT.
+
+In plain English:  This credits file is automatically generated to the best of our ability, but it remains YOUR RESPONSIBILITY as a game developer to ensure that the art you use is attributed properly.  That is, we can't be held liable even if all of the information in this file is completely wrong.   In addition, some of the art listed in this file may have SPECIAL ATTRIBUTION INSTRUCTIONS that ask that you credit the artist in a particular way, rather than a verbatim copyright notice.  In those cases, you will probably need to hand-edit this file to comply with their instructions.  In some older art, attribution instructions may be included in the art description itself.  Please check the art page to be sure.
+
+We recommend that you delete this notice when you're sure the information here is correct and the attribution instructions are properly followed.  If you aren't the game developer and you're seeing this notice here in the credits, it probably means that the developer hasn't properly verified the attribution information contained herein even though it said they were supposed to do it right on the page where they downloaded this file.  
+###############################################
+
+Title:
+    Monster or beast sounds
+
+Author:
+    pauliuw
+
+URL:
+    https://opengameart.org/content/monster-or-beast-sounds
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * monsters_or_beasts.7z
+
+----------------------------------------
+
+Title:
+    RPG Sound Pack
+
+Author:
+    artisticdude
+
+URL:
+    https://opengameart.org/content/rpg-sound-pack
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * rpg_sound_pack.zip
+
+----------------------------------------
+
+Title:
+    Monster Sound Effects 2
+
+Author:
+    Ogrebane
+
+URL:
+    https://opengameart.org/content/monster-sound-effects-2
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * monster_sfx_pack_2.zip
+
+----------------------------------------
+
+Title:
+    Teleport Spell
+
+Author:
+    Ogrebane
+
+URL:
+    https://opengameart.org/content/teleport-spell
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * teleport.wav
+
+----------------------------------------
+
+Title:
+    Ghost breath
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/ghost-breath
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * ghostbreath.flac
+
+----------------------------------------
+
+Title:
+    6 Short water splashes
+
+Author:
+    ezwa
+
+URL:
+    https://opengameart.org/content/6-short-water-splashes
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * ezwa-water_splash.7z
+
+----------------------------------------
+
+Title:
+    37 hits/punches
+
+Author:
+    Independent.nu
+
+URL:
+    https://opengameart.org/content/37-hitspunches
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * independent_nu_ljudbank-hits_and_punches.7z
+
+----------------------------------------
+
+Title:
+    Heartbeat (single sound)
+
+Author:
+    Independent.nu
+
+URL:
+    https://opengameart.org/content/heartbeat-single-sound
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * heartbeat.mp3_.flac
+
+----------------------------------------
+
+Title:
+    Random SFX
+
+Author:
+    Écrivain
+
+URL:
+    https://opengameart.org/content/random-sfx
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * SFX.zip
+
+----------------------------------------
+
+Title:
+    Ghost
+
+Author:
+    Ogrebane
+
+URL:
+    https://opengameart.org/content/ghost
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * ghost.wav
+
+----------------------------------------
+
+Title:
+    3 strange sound effects
+
+Author:
+    UrieW
+
+URL:
+    https://opengameart.org/content/3-strange-sound-effects
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * strange sound pack.zip
+    * sfx.zip
+
+----------------------------------------
+
+Title:
+    Earth Element Magic Spell
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/earth-element-magic-spell
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * Earth Element Magic Spell.flac
+    * Earth Element Magic Spell.ogg
+
+----------------------------------------
+
+Title:
+    Short alarm
+
+Author:
+    yd
+
+URL:
+    https://opengameart.org/content/short-alarm
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * alarm.ogg
+
+----------------------------------------
+
+Title:
+    cutlery sounds
+
+Author:
+    TinyWorlds
+
+URL:
+    https://opengameart.org/content/cutlery-sounds
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * cup_on_table_01.ogg
+    * drop_cutlery_01.ogg
+    * fork_on_dish_01.ogg
+    * fork_on_dish_02.ogg
+    * fork_on_dish_03.ogg
+    * pick_cutlery_01.ogg
+
+----------------------------------------
+
+Title:
+    Ghost Monster Voice Moaning & Growling
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/ghost-monster-voice-moaning-growling
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * qubodup-GhostMoans.zip
+
+----------------------------------------
+
+Title:
+    Water Waves
+
+Author:
+    transitking
+
+URL:
+    https://opengameart.org/content/water-waves
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * wave_01_cc0-11505__transitking__wavesound.flac
+    * wave_02_cc0-11505__transitking__wavesound.flac
+    * wave_03_cc0-11505__transitking__wavesound.flac
+    * wave_04_cc0-11505__transitking__wavesound.flac
+
+----------------------------------------
+
+Title:
+    Tiny Naval Battle Sounds Set
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/tiny-naval-battle-sounds-set
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    optional: Iwan Gabovitch <qubodup@gmail.com>
+
+File(s):
+    * qubodup-NavalBattleSoundSet-cc0.7z
+
+----------------------------------------
+
+Title:
+    Jump Landing Sound
+
+Author:
+    MentalSanityOff
+
+URL:
+    https://opengameart.org/content/jump-landing-sound
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * jumpland.wav
+    * jumpland44100.mp3
+    * jumpland48000.mp3
+
+----------------------------------------
+
+Title:
+    break pumpkin
+
+Author:
+    TinyWorlds
+
+URL:
+    https://opengameart.org/content/break-pumpkin
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * pumpkin_break_01.ogg
+    * pumpkin_break_02.ogg
+
+----------------------------------------
+
+Title:
+    cut & peel a pumpkin
+
+Author:
+    TinyWorlds
+
+URL:
+    https://opengameart.org/content/cut-peel-a-pumpkin
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * cut_pumpkin_01.ogg
+    * cut_pumpkin_02.ogg
+    * cut_pumpkin_03.ogg
+    * peel_pumpkin_01.ogg
+    * peel_pumpkin_02.ogg
+    * peel_pumpkin_03.ogg
+    * peel_pumpkin_04.ogg
+    * peel_pumpkin_05.ogg
+
+----------------------------------------
+
+Title:
+    stove switch
+
+Author:
+    TinyWorlds
+
+URL:
+    https://opengameart.org/content/stove-switch
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * switch_strength_stove_01.ogg
+    * turn_stove_on_01.ogg
+
+----------------------------------------
+
+Title:
+    adding salt
+
+Author:
+    TinyWorlds
+
+URL:
+    https://opengameart.org/content/adding-salt
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * adding_salt_01.ogg
+
+----------------------------------------
+
+Title:
+    boiling water loops
+
+Author:
+    TinyWorlds
+
+URL:
+    https://opengameart.org/content/boiling-water-loops
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * cooking_with_cover_01.ogg
+    * cooking_without_cover_01.ogg
+
+----------------------------------------
+
+Title:
+    Beach Ocean Waves
+
+Author:
+    jasinski
+
+URL:
+    https://opengameart.org/content/beach-ocean-waves
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * wave_01_cc0-18363__jasinski__alkaibeach.flac
+    * wave_02_cc0-18363__jasinski__alkaibeach.flac
+    * wave_03_cc0-18363__jasinski__alkaibeach.flac
+    * wave_04_cc0-18363__jasinski__alkaibeach.flac
+
+----------------------------------------
+
+Title:
+    Dog Snarl Grunt Grumble
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/dog-snarl-grunt-grumble
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * dog_0.7z
+
+----------------------------------------
+
+Title:
+    Dripping water loop
+
+Author:
+    Independent.nu
+
+URL:
+    https://opengameart.org/content/dripping-water-loop
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * atmosbasement.mp3_.flac
+
+----------------------------------------
+
+Title:
+    Evil creature
+
+Author:
+    A New Room
+
+URL:
+    https://opengameart.org/content/evil-creature
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * ambient sound fx.zip
+
+----------------------------------------
+
+Title:
+    Metal Interactions
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/metal-interactions
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * metal_interactions.7z
+
+----------------------------------------
+
+Title:
+    Hit sounds
+
+Author:
+    pauliuw
+
+URL:
+    https://opengameart.org/content/hit-sounds
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * hits.7z
+
+----------------------------------------
+
+Title:
+    Battle Sound Effects
+
+Author:
+    artisticdude
+
+URL:
+    https://opengameart.org/content/battle-sound-effects
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * battle_sound_effects_0.zip
+
+----------------------------------------
+
+Title:
+    Swish - bamboo stick weapon swhoshes
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/swish-bamboo-stick-weapon-swhoshes
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    [optional]
+qubodup
+
+File(s):
+    * swoshes.7z
+
+----------------------------------------
+
+Title:
+    Liquid Bottle Drink Set
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/liquid-bottle-drink-set
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * qubodup-bottle-and-drink-sounds.7z
+
+----------------------------------------
+
+Title:
+    High pitch scream sounds(2)
+
+Author:
+    pauliuw
+
+URL:
+    https://opengameart.org/content/high-pitch-scream-sounds2
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * high_pitch_scream_gverb.mp3
+    * high_pitch_scream.mp3
+
+----------------------------------------
+
+Title:
+    Animal or beast sounds
+
+Author:
+    pauliuw
+
+URL:
+    https://opengameart.org/content/animal-or-beast-sounds
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * beast_or_animal.7z
+
+----------------------------------------
+
+Title:
+    Atmospheric Interaction Sound Pack
+
+Author:
+    legoluft
+
+URL:
+    https://opengameart.org/content/atmospheric-interaction-sound-pack
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * krank_sounds.7z
+
+----------------------------------------
+
+Title:
+    Ice spells
+
+Author:
+    bart
+
+URL:
+    https://opengameart.org/content/ice-spells
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * icespells.zip
+
+----------------------------------------
+
+Title:
+    35 wooden cracks/hits/destructions
+
+Author:
+    Independent.nu
+
+URL:
+    https://opengameart.org/content/35-wooden-crackshitsdestructions
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * independent_nu_ljudbank-wood_crack_hit_destruction.7z
+
+----------------------------------------
+
+Title:
+    8 wet squish, slurp impacts
+
+Author:
+    Independent.nu
+
+URL:
+    https://opengameart.org/content/8-wet-squish-slurp-impacts
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * independent_nu_ljudbank-wet_squish_slurp_impacts.7z
+
+----------------------------------------
+
+Title:
+    5 break, crunch impacts
+
+Author:
+    Independent.nu
+
+URL:
+    https://opengameart.org/content/5-break-crunch-impacts
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * independent_nu_ljudbank-break_crunch_impact.7z
+
+----------------------------------------
+
+Title:
+    2 wooden squish splatter sequences
+
+Author:
+    Independent.nu
+
+URL:
+    https://opengameart.org/content/2-wooden-squish-splatter-sequences
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * independent_nu_ljudbank-extreme_splatter.7z
+
+----------------------------------------
+
+Title:
+    16 button clicks
+
+Author:
+    Independent.nu
+
+URL:
+    https://opengameart.org/content/16-button-clicks
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * independent_nu_ljudbank-buttons_and_clicks.7z
+
+----------------------------------------
+
+Title:
+    GUI Sound Effects
+
+Author:
+    Lokif
+
+URL:
+    https://opengameart.org/content/gui-sound-effects
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * GUI_Sound_Effects_by_Lokif.7z
+
+----------------------------------------
+
+Title:
+    7 mechanical clicks and buzzes
+
+Author:
+    qubodup
+
+URL:
+    https://opengameart.org/content/7-mechanical-clicks-and-buzzes
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * mechanical.7z
+
+----------------------------------------
+
+Title:
+    Residue-sfx
+
+Author:
+    FacadeGaikan
+
+URL:
+    https://opengameart.org/content/residue-sfx
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Just visit my website. http://www.planetkillergames.net/
+
+File(s):
+    * residue-sfx.zip
+
+----------------------------------------
+
+Title:
+    Chain winch sounds
+
+Author:
+    bart
+
+URL:
+    https://opengameart.org/content/chain-winch-sounds
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * winch.zip
+
+----------------------------------------
+
+Title:
+    Different steps on wood, stone, leaves, gravel and mud
+
+Author:
+    TinyWorlds
+
+URL:
+    https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * [kdd]DifferentSteps.zip
+
+----------------------------------------
+
+Title:
+    War on Water:  SNDFX
+
+Author:
+    yd
+
+URL:
+    https://opengameart.org/content/war-on-water-sndfx
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * sndfx.zip
+
+----------------------------------------
+
+Title:
+    Bicycle Horn
+
+Author:
+    AntumDeluge
+
+URL:
+    https://opengameart.org/content/bicycle-horn
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * bicycle-horn-1.wav
+
+----------------------------------------
+
+Title:
+    Bicycle Sounds
+
+Author:
+    AntumDeluge
+
+URL:
+    https://opengameart.org/content/bicycle-sounds
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * bicycle_sounds.zip
+
+----------------------------------------
+
+Title:
+    Ticking Clock
+
+Author:
+    AntumDeluge
+
+URL:
+    https://opengameart.org/content/ticking-clock-0
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * ticking_clock.zip
+
+----------------------------------------
+
+Title:
+    Platformer Sounds: Terminal, Interaction, Door, Shots, Bang and Footsteps
+
+Author:
+    yd
+
+URL:
+    https://opengameart.org/content/platformer-sounds-terminal-interaction-door-shots-bang-and-footsteps
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * yd-Sounds.zip
+
+----------------------------------------
+
+Title:
+    CameraShudder
+
+Author:
+    FacadeGaikan
+
+URL:
+    https://opengameart.org/content/camerashudder
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    It is cc0, but comment on it if you use it, so I know my tinkering is not in vein. (neither are my puns)
+
+File(s):
+    * camera.ogg
+
+----------------------------------------
+
+Title:
+    Menu Choice
+
+Author:
+    Sudocolon
+
+URL:
+    https://opengameart.org/content/menu-choice
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * Menu Choice.mp3
+
+----------------------------------------
+
+Title:
+    Birds and Wind - Ambient,  Birds, Wind and Synth
+
+Author:
+    Spring Spring
+
+URL:
+    https://opengameart.org/content/birds-and-wind-ambient-birds-wind-and-synth
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    Composer:
+Spring
+
+Some Bird Sound Effects (All Public Domain) by: 
+isaiah658
+syncopika
+pauliuw
+
+File(s):
+    * Birds, Wind, Synth (Final B Mix).ogg
+    * Birds, Wind, Synth (Final).ogg
+    * Birds, Wind and Synth V2.ogg
+    * Birds and Wind - Ambient.ogg
+
+----------------------------------------
+
+

@@ -1,10 +1,16 @@
-import { Actor, Color, Scene, Vector } from 'excalibur';
-import { CAMERA, PALETTE, PLAYER, VIEW } from '../config';
+import { Actor, Canvas, Color, Scene, Vector, vec } from 'excalibur';
+import { CAMERA, PALETTE, PLAYER, SPRITE, VIEW } from '../config';
 import { InputMap } from '../input/InputMap';
 import { LEVEL_ONE } from '../level/level';
+import { drawTerrain } from '../level/terrain';
 import { PlayerController, type PlayerInput } from '../player/PlayerController';
+import { PlayerRig } from '../player/PlayerRig';
+import { ambientSound, growlSound, tilesImage } from '../resources';
 import { GameState } from '../systems/GameState';
 import { Hud } from '../ui/Hud';
+
+const AMBIENT_VOLUME = 0.35;
+const GROWL_VOLUME = 0.5;
 
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
@@ -13,9 +19,9 @@ function clamp(value: number, min: number, max: number): number {
 /**
  * Single-level platformer scene.
  *
- * The level's solids are drawn as rectangles, a pure `PlayerController` owns
- * the movement, and the camera follows the player with exponential smoothing,
- * clamped so it never shows outside the room.
+ * The level is painted once into a cached tile graphic, a pure
+ * `PlayerController` owns the movement, the sprite rig mirrors it, and the
+ * camera follows with exponential smoothing, clamped to the room.
  */
 export class GameScene extends Scene {
   private readonly keys = new InputMap();
@@ -23,29 +29,28 @@ export class GameScene extends Scene {
   private readonly hud = new Hud();
   private readonly player = new PlayerController(PLAYER, LEVEL_ONE.spawn);
   private readonly solids = LEVEL_ONE.solids;
-  private playerActor: Actor | null = null;
+  private readonly rig = new PlayerRig();
+
+  private audioStarted = false;
+  private nextGrowlAt = 8 + Math.random() * 6;
 
   override onInitialize(): void {
     this.backgroundColor = Color.fromHex(PALETTE.background);
+    this.camera.zoom = CAMERA.zoom;
 
-    for (const solid of this.solids) {
-      this.add(
-        new Actor({
-          pos: new Vector(solid.x + solid.w / 2, solid.y + solid.h / 2),
-          width: solid.w,
-          height: solid.h,
-          color: Color.fromHex(solid.kind === 'ground' ? PALETTE.ground : PALETTE.platform),
-        }),
-      );
-    }
-
-    this.playerActor = new Actor({
-      pos: new Vector(PLAYER.width / 2, PLAYER.height / 2),
-      width: PLAYER.width,
-      height: PLAYER.height,
-      color: Color.fromHex(PALETTE.player),
+    const terrain = new Canvas({
+      width: LEVEL_ONE.width,
+      height: LEVEL_ONE.height,
+      cache: true,
+      draw: (ctx) => drawTerrain(ctx, tilesImage.image, this.solids),
     });
-    this.add(this.playerActor);
+    const terrainActor = new Actor({
+      pos: vec(LEVEL_ONE.width / 2, LEVEL_ONE.height / 2),
+    });
+    terrainActor.graphics.use(terrain);
+    this.add(terrainActor);
+
+    this.add(this.rig.actor);
 
     this.syncPlayerActor();
     this.snapCamera();
@@ -66,31 +71,45 @@ export class GameScene extends Scene {
       this.player.respawn(LEVEL_ONE.spawn);
       this.state.reset();
       this.hud.message('Reset');
+      void growlSound.play(GROWL_VOLUME);
     } else {
       this.player.update(dt, input, this.solids);
     }
 
+    this.rig.setMoving(this.player.grounded && Math.abs(this.player.vx) > 8);
+    this.rig.setFacing(this.player.facing);
+
     this.syncPlayerActor();
     this.updateCamera(dt);
+    this.updateAudio(input);
 
     // Latch input last so `pressed()` edges survive the whole step.
     this.keys.endFrame();
   }
 
   private syncPlayerActor(): void {
-    if (this.playerActor) {
-      const { box } = this.player;
-      this.playerActor.pos.setTo(box.x + box.w / 2, box.y + box.h / 2);
-    }
+    const { box } = this.player;
+    // Bottom-align the 32px sprite with the 40px collision box.
+    this.rig.actor.pos.setTo(
+      box.x + box.w / 2,
+      box.y + box.h - SPRITE.character / 2,
+    );
+  }
+
+  /** Half the visible world, accounting for camera zoom. */
+  private get visibleHalf(): { x: number; y: number } {
+    return {
+      x: VIEW.width / (2 * CAMERA.zoom),
+      y: VIEW.height / (2 * CAMERA.zoom),
+    };
   }
 
   private cameraTarget(): Vector {
     const { box } = this.player;
-    const halfW = VIEW.width / 2;
-    const halfH = VIEW.height / 2;
+    const half = this.visibleHalf;
     return new Vector(
-      clamp(box.x + box.w / 2, halfW, LEVEL_ONE.width - halfW),
-      clamp(box.y + box.h / 2, halfH, LEVEL_ONE.height - halfH),
+      clamp(box.x + box.w / 2, half.x, LEVEL_ONE.width - half.x),
+      clamp(box.y + box.h / 2, half.y, LEVEL_ONE.height - half.y),
     );
   }
 
@@ -106,5 +125,20 @@ export class GameScene extends Scene {
       current.x + (target.x - current.x) * k,
       current.y + (target.y - current.y) * k,
     );
+  }
+
+  private updateAudio(input: PlayerInput): void {
+    // WebAudio needs a user gesture; start the loop on the first input.
+    if (!this.audioStarted && (input.axis !== 0 || input.jumpPressed || input.jumpHeld)) {
+      ambientSound.loop = true;
+      void ambientSound.play(AMBIENT_VOLUME);
+      this.audioStarted = true;
+    }
+
+    // An occasional growl to keep the ward feeling occupied.
+    if (this.state.seconds >= this.nextGrowlAt) {
+      this.nextGrowlAt = this.state.seconds + 9 + Math.random() * 8;
+      void growlSound.play(GROWL_VOLUME);
+    }
   }
 }

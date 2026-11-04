@@ -1,5 +1,6 @@
 import { Color, DisplayMode, Engine } from 'excalibur';
 import { FIXED_UPDATE_FPS, PALETTE, VIEW } from './game/config';
+import { resources } from './game/resources';
 import { GameScene } from './game/scenes/GameScene';
 import './style.css';
 
@@ -11,7 +12,7 @@ const game = new Engine({
   backgroundColor: Color.fromHex(PALETTE.background),
   suppressPlayButton: true,
   fixedUpdateFps: FIXED_UPDATE_FPS,
-  antialiasing: true,
+  pixelArt: true,
 });
 
 game.addScene('game', new GameScene());
@@ -29,7 +30,7 @@ window.addEventListener(
 );
 
 game
-  .start()
+  .start(resources)
   .then(() => game.goToScene('game'))
   .catch((error: unknown) => {
     console.error('Failed to start Five Nights in the Metal Ward', error);
