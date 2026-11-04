@@ -1,0 +1,96 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: #05080b;
+  color: #d6dde5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  overflow: hidden;
+}
+
+#shell {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+canvas#game {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+}
+
+#hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.28em;
+  color: #e8eef5;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #6d7b8a;
+}
+
+.controls {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #8a97a5;
+  text-align: right;
+}
+
+kbd {
+  display: inline-block;
+  padding: 1px 6px;
+  margin: 0 1px;
+  border: 1px solid #2c3946;
+  border-radius: 4px;
+  background: #131c25;
+  color: #cdd7e1;
+  font: inherit;
+  font-size: 11px;
+}
+
+.toast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #d24b4b;
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.toast.visible {
+  opacity: 1;
+}

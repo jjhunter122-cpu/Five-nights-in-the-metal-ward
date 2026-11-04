@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05080b" />
+    <title>Five Nights in the Metal Ward</title>
+  </head>
+  <body>
+    <main id="shell">
+      <canvas id="game" aria-label="Five Nights in the Metal Ward game canvas"></canvas>
+
+      <div id="hud">
+        <header class="brand">
+          <h1>FIVE NIGHTS IN THE METAL WARD</h1>
+          <p>prototype</p>
+        </header>
+
+        <div id="toast" class="toast" role="status"></div>
+
+        <aside class="controls" aria-label="Controls">
+          <div><kbd>A</kbd><kbd>D</kbd> move <kbd>SPACE</kbd> jump</div>
+          <div><kbd>J</kbd> attack <kbd>SHIFT</kbd> dash <kbd>R</kbd> reset</div>
+        </aside>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
