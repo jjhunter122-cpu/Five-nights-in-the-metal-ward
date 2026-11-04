@@ -3,6 +3,7 @@ import { CAMERA, PALETTE, PLAYER, SPRITE, VIEW } from '../config';
 import { InputMap } from '../input/InputMap';
 import { LEVEL_ONE } from '../level/level';
 import { drawTerrain } from '../level/terrain';
+import { overlaps } from '../physics/aabb';
 import { PlayerController, type PlayerInput } from '../player/PlayerController';
 import { PlayerRig } from '../player/PlayerRig';
 import { ambientSound, growlSound, tilesImage } from '../resources';
@@ -11,6 +12,8 @@ import { Hud } from '../ui/Hud';
 
 const AMBIENT_VOLUME = 0.35;
 const GROWL_VOLUME = 0.5;
+
+const NEUTRAL_INPUT: PlayerInput = { axis: 0, jumpPressed: false, jumpHeld: false };
 
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
@@ -21,7 +24,8 @@ function clamp(value: number, min: number, max: number): number {
  *
  * The level is painted once into a cached tile graphic, a pure
  * `PlayerController` owns the movement, the sprite rig mirrors it, and the
- * camera follows with exponential smoothing, clamped to the room.
+ * camera follows with exponential smoothing, clamped to the room. Reaching the
+ * goal banner wins; `R` restarts.
  */
 export class GameScene extends Scene {
   private readonly keys = new InputMap();
@@ -32,7 +36,7 @@ export class GameScene extends Scene {
   private readonly rig = new PlayerRig();
 
   private audioStarted = false;
-  private nextGrowlAt = 8 + Math.random() * 6;
+  private won = false;
 
   override onInitialize(): void {
     this.backgroundColor = Color.fromHex(PALETTE.background);
@@ -42,7 +46,7 @@ export class GameScene extends Scene {
       width: LEVEL_ONE.width,
       height: LEVEL_ONE.height,
       cache: true,
-      draw: (ctx) => drawTerrain(ctx, tilesImage.image, this.solids),
+      draw: (ctx) => drawTerrain(ctx, tilesImage.image, this.solids, LEVEL_ONE.goal),
     });
     const terrainActor = new Actor({
       pos: vec(LEVEL_ONE.width / 2, LEVEL_ONE.height / 2),
@@ -54,7 +58,7 @@ export class GameScene extends Scene {
 
     this.syncPlayerActor();
     this.snapCamera();
-    this.hud.message('Level 1', 1200);
+    this.hud.message('Reach the signpost', 1600);
   }
 
   override onPreUpdate(_engine: unknown, delta: number): void {
@@ -70,10 +74,23 @@ export class GameScene extends Scene {
     if (this.keys.pressed('reset')) {
       this.player.respawn(LEVEL_ONE.spawn);
       this.state.reset();
+      this.won = false;
+      this.hud.hideWin();
       this.hud.message('Reset');
-      void growlSound.play(GROWL_VOLUME);
     } else {
-      this.player.update(dt, input, this.solids);
+      const wasGrounded = this.player.grounded;
+      // Once won, ignore input but keep the physics settling the player.
+      this.player.update(dt, this.won ? NEUTRAL_INPUT : input, this.solids);
+
+      if (!this.won && !wasGrounded && this.player.grounded) {
+        // Touchdown: only on the airborne -> grounded edge, not every resting step.
+        void growlSound.play(GROWL_VOLUME);
+      }
+
+      if (!this.won && overlaps(this.player.box, LEVEL_ONE.goal)) {
+        this.won = true;
+        this.hud.showWin();
+      }
     }
 
     this.rig.setMoving(this.player.grounded && Math.abs(this.player.vx) > 8);
@@ -81,7 +98,7 @@ export class GameScene extends Scene {
 
     this.syncPlayerActor();
     this.updateCamera(dt);
-    this.updateAudio(input);
+    this.updateAudio();
 
     // Latch input last so `pressed()` edges survive the whole step.
     this.keys.endFrame();
@@ -127,18 +144,12 @@ export class GameScene extends Scene {
     );
   }
 
-  private updateAudio(input: PlayerInput): void {
-    // WebAudio needs a user gesture; start the loop on the first input.
-    if (!this.audioStarted && (input.axis !== 0 || input.jumpPressed || input.jumpHeld)) {
+  /** Loop the ambience in the background, starting on the first key press. */
+  private updateAudio(): void {
+    if (!this.audioStarted && this.keys.anyDown()) {
       ambientSound.loop = true;
       void ambientSound.play(AMBIENT_VOLUME);
       this.audioStarted = true;
-    }
-
-    // An occasional growl to keep the ward feeling occupied.
-    if (this.state.seconds >= this.nextGrowlAt) {
-      this.nextGrowlAt = this.state.seconds + 9 + Math.random() * 8;
-      void growlSound.play(GROWL_VOLUME);
     }
   }
 }

@@ -59,6 +59,11 @@ export class InputMap {
     }
   }
 
+  /** True while any tracked key is held. */
+  anyDown(): boolean {
+    return this.down.size > 0;
+  }
+
   dispose(): void {
     window.removeEventListener('keydown', this.onKeyDown);
     window.removeEventListener('keyup', this.onKeyUp);

@@ -1,3 +1,4 @@
+import type { Aabb } from '../physics/aabb';
 import type { Solid, SolidKind } from './level';
 
 export interface TileRef {
@@ -59,12 +60,14 @@ export function pickTile(kind: SolidKind, i: number, j: number, cols: number): T
 /**
  * Paint every solid into a 2D context using the tileset. Each solid is clipped
  * to its own rectangle so partial edge tiles cannot bleed into the gaps
- * between platforms.
+ * between platforms. When a `goal` is given, a signpost is stamped resting on
+ * its bottom edge as a visible target.
  */
 export function drawTerrain(
   ctx: CanvasRenderingContext2D,
   image: CanvasImageSource,
   solids: readonly Solid[],
+  goal?: Aabb,
 ): void {
   for (const solid of solids) {
     const cols = Math.ceil(solid.w / TILE);
@@ -93,5 +96,14 @@ export function drawTerrain(
     }
 
     ctx.restore();
+  }
+
+  if (goal) {
+    // Two wooden signposts (tile 15,0) flanking the goal, standing on its base.
+    const gy = Math.round(goal.y + goal.h - TILE);
+    const positions = [Math.round(goal.x + 4), Math.round(goal.x + goal.w - TILE - 4)];
+    for (const gx of positions) {
+      ctx.drawImage(image, 15 * TILE, 0, TILE, TILE, gx, gy, TILE, TILE);
+    }
   }
 }

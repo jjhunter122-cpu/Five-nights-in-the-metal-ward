@@ -31,9 +31,9 @@ pnpm preview
 | Jump | `Space`, `W` or `↑` |
 | Reset | `R` |
 
-The jump has variable height — tap for a short hop, hold for a full jump. Audio
-starts on your first key press (browsers require a gesture before playing
-sound).
+The jump has variable height — tap for a short hop, hold for a full jump. Climb
+to the signposts on the final platform to win; `R` restarts. Audio starts on
+your first key press (browsers require a gesture before playing sound).
 
 ## What's in it
 
@@ -47,7 +47,10 @@ sound).
   rusty ground set and a teal platform set.
 - **Animated hero:** `characters.png` drives the player sprite (idle + run,
   mirrored when facing left).
-- **Audio:** a looping ambience plus an occasional monster growl.
+- **Audio:** `ambient.ogg` loops in the background; `growl.wav` fires each time
+  the player lands.
+- **A goal:** two signposts mark the win zone on the final platform. Reaching
+  it shows a persistent **YOU WIN** banner and freezes the player; `R` restarts.
 
 Movement is expressed as a pure `PlayerController` with no Excalibur imports,
 so it runs headless in Vitest.
@@ -107,4 +110,4 @@ tests/                          headless Vitest suites
 
 1. More levels, plus level transitions and a level format.
 2. Hazards/damage, a health bar and a death/respawn flow.
-3. Wire the growl to a real enemy that patrols the ward.
+3. Wire the growl and a patrolling enemy together into a real threat.

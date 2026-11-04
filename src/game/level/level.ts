@@ -11,6 +11,8 @@ export interface Level {
   height: number;
   spawn: { x: number; y: number };
   solids: Solid[];
+  /** The win zone on the final platform. */
+  goal: Aabb;
 }
 
 function solid(x: number, y: number, w: number, h: number, kind: SolidKind): Solid {
@@ -48,4 +50,6 @@ export const LEVEL_ONE: Level = {
     solid(2000, 280, 180, 24, 'platform'),
     solid(2260, 200, 200, 24, 'platform'),
   ],
+  // Centred on the final platform (which spans x 2260..2460, top at y=200).
+  goal: { x: 2310, y: 152, w: 100, h: 48 },
 };
